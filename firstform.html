@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YAV Tech</title>
+  </head>
+  <style>
+    body {
+      background-image: url("background pic.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    form {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h3 style="text-align: center">Book a Call</h3>
+    <p style="text-align: center">
+      Book a call slot and our representative will call you within 1hr of
+      selected time
+    </p>
+    <br />
+    <hr />
+    <br />
+    <form action="#" onsubmit="onsignup(event)">
+      <fieldset>
+        <label for="fname">First name:</label><br /><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="email">Email:</label><br /><br />
+        <input type="text" id="email" name="email" /><br /><br />
+        <label for="phone">Phone:</label><br /><br />
+        <input type="text" id="phone" name="phone" maxlength="10" /><br /><br />
+        <label for="date and time">Time for Call:</label><br /><br />
+        <input type="date" id="date and time" name="date and time" />
+        <input
+          type="time"
+          id="date and time"
+          name="date and time"
+        /><br /><br />
+        <button type="submit">Get a call</button>
+      </fieldset>
+    </form>
+    <script>
+      function onsignup(event) {
+        const Name = document.getElementById("fname").value;
+        const Email = document.getElementById("email").value;
+        const Phone = document.getElementById("phone").value;
+        console.log(Name);
+        console.log(Email);
+        console.log(Phone);
+      }
+    </script>
+  </body>
+</html>
